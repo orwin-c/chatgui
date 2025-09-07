@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		1B90EB972E6E33D400B6C50A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B90EB802E6E33D200B6C50A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B90EB872E6E33D200B6C50A;
+			remoteInfo = chatgui;
+		};
+		1B90EBA12E6E33D400B6C50A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B90EB802E6E33D200B6C50A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B90EB872E6E33D200B6C50A;
+			remoteInfo = chatgui;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B90EB882E6E33D200B6C50A /* chatgui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatgui.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B90EB962E6E33D400B6C50A /* chatguiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatguiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B90EBA02E6E33D400B6C50A /* chatguiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatguiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1B90EB8A2E6E33D200B6C50A /* chatgui */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = chatgui;
+			sourceTree = "<group>";
+		};
+		1B90EB992E6E33D400B6C50A /* chatguiTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = chatguiTests;
+			sourceTree = "<group>";
+		};
+		1B90EBA32E6E33D400B6C50A /* chatguiUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = chatguiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B90EB852E6E33D200B6C50A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B90EB932E6E33D400B6C50A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B90EB9D2E6E33D400B6C50A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B90EB7F2E6E33D200B6C50A = {
+			isa = PBXGroup;
+			children = (
+				1B90EB8A2E6E33D200B6C50A /* chatgui */,
+				1B90EB992E6E33D400B6C50A /* chatguiTests */,
+				1B90EBA32E6E33D400B6C50A /* chatguiUITests */,
+				1B90EB892E6E33D200B6C50A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B90EB892E6E33D200B6C50A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B90EB882E6E33D200B6C50A /* chatgui.app */,
+				1B90EB962E6E33D400B6C50A /* chatguiTests.xctest */,
+				1B90EBA02E6E33D400B6C50A /* chatguiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B90EB872E6E33D200B6C50A /* chatgui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B90EBAA2E6E33D400B6C50A /* Build configuration list for PBXNativeTarget "chatgui" */;
+			buildPhases = (
+				1B90EB842E6E33D200B6C50A /* Sources */,
+				1B90EB852E6E33D200B6C50A /* Frameworks */,
+				1B90EB862E6E33D200B6C50A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1B90EB8A2E6E33D200B6C50A /* chatgui */,
+			);
+			name = chatgui;
+			packageProductDependencies = (
+			);
+			productName = chatgui;
+			productReference = 1B90EB882E6E33D200B6C50A /* chatgui.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B90EB952E6E33D400B6C50A /* chatguiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B90EBAD2E6E33D400B6C50A /* Build configuration list for PBXNativeTarget "chatguiTests" */;
+			buildPhases = (
+				1B90EB922E6E33D400B6C50A /* Sources */,
+				1B90EB932E6E33D400B6C50A /* Frameworks */,
+				1B90EB942E6E33D400B6C50A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B90EB982E6E33D400B6C50A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1B90EB992E6E33D400B6C50A /* chatguiTests */,
+			);
+			name = chatguiTests;
+			packageProductDependencies = (
+			);
+			productName = chatguiTests;
+			productReference = 1B90EB962E6E33D400B6C50A /* chatguiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1B90EB9F2E6E33D400B6C50A /* chatguiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B90EBB02E6E33D400B6C50A /* Build configuration list for PBXNativeTarget "chatguiUITests" */;
+			buildPhases = (
+				1B90EB9C2E6E33D400B6C50A /* Sources */,
+				1B90EB9D2E6E33D400B6C50A /* Frameworks */,
+				1B90EB9E2E6E33D400B6C50A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B90EBA22E6E33D400B6C50A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1B90EBA32E6E33D400B6C50A /* chatguiUITests */,
+			);
+			name = chatguiUITests;
+			packageProductDependencies = (
+			);
+			productName = chatguiUITests;
+			productReference = 1B90EBA02E6E33D400B6C50A /* chatguiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B90EB802E6E33D200B6C50A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					1B90EB872E6E33D200B6C50A = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					1B90EB952E6E33D400B6C50A = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 1B90EB872E6E33D200B6C50A;
+					};
+					1B90EB9F2E6E33D400B6C50A = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 1B90EB872E6E33D200B6C50A;
+					};
+				};
+			};
+			buildConfigurationList = 1B90EB832E6E33D200B6C50A /* Build configuration list for PBXProject "chatgui" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B90EB7F2E6E33D200B6C50A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1B90EB892E6E33D200B6C50A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B90EB872E6E33D200B6C50A /* chatgui */,
+				1B90EB952E6E33D400B6C50A /* chatguiTests */,
+				1B90EB9F2E6E33D400B6C50A /* chatguiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B90EB862E6E33D200B6C50A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B90EB942E6E33D400B6C50A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B90EB9E2E6E33D400B6C50A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B90EB842E6E33D200B6C50A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B90EB922E6E33D400B6C50A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B90EB9C2E6E33D400B6C50A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B90EB982E6E33D400B6C50A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B90EB872E6E33D200B6C50A /* chatgui */;
+			targetProxy = 1B90EB972E6E33D400B6C50A /* PBXContainerItemProxy */;
+		};
+		1B90EBA22E6E33D400B6C50A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B90EB872E6E33D200B6C50A /* chatgui */;
+			targetProxy = 1B90EBA12E6E33D400B6C50A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B90EBA82E6E33D400B6C50A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1B90EBA92E6E33D400B6C50A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1B90EBAB2E6E33D400B6C50A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = chatgui/chatgui.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = owencheng.chatgui;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1B90EBAC2E6E33D400B6C50A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = chatgui/chatgui.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = owencheng.chatgui;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1B90EBAE2E6E33D400B6C50A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = owencheng.chatguiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chatgui.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/chatgui";
+			};
+			name = Debug;
+		};
+		1B90EBAF2E6E33D400B6C50A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = owencheng.chatguiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chatgui.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/chatgui";
+			};
+			name = Release;
+		};
+		1B90EBB12E6E33D400B6C50A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = owencheng.chatguiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = chatgui;
+			};
+			name = Debug;
+		};
+		1B90EBB22E6E33D400B6C50A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = owencheng.chatguiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = chatgui;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B90EB832E6E33D200B6C50A /* Build configuration list for PBXProject "chatgui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B90EBA82E6E33D400B6C50A /* Debug */,
+				1B90EBA92E6E33D400B6C50A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B90EBAA2E6E33D400B6C50A /* Build configuration list for PBXNativeTarget "chatgui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B90EBAB2E6E33D400B6C50A /* Debug */,
+				1B90EBAC2E6E33D400B6C50A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B90EBAD2E6E33D400B6C50A /* Build configuration list for PBXNativeTarget "chatguiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B90EBAE2E6E33D400B6C50A /* Debug */,
+				1B90EBAF2E6E33D400B6C50A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B90EBB02E6E33D400B6C50A /* Build configuration list for PBXNativeTarget "chatguiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B90EBB12E6E33D400B6C50A /* Debug */,
+				1B90EBB22E6E33D400B6C50A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B90EB802E6E33D200B6C50A /* Project object */;
+}
