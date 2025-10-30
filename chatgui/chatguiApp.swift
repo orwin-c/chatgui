@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import AppKit
 
 @main
 struct chatguiApp: App {
+    @StateObject private var chatManager = ChatManager()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                ContentView()
+                    .environmentObject(chatManager)
+            }
         }
+        .windowStyle(.hiddenTitleBar)
     }
 }
