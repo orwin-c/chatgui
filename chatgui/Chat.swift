@@ -16,7 +16,7 @@ struct Message: Identifiable, Codable, Hashable {
 
     let id = UUID()
     let role: Role
-    let content: String
+    var content: String
     let date: Date
 }
 
@@ -28,32 +28,6 @@ struct Chat: Identifiable, Hashable {
     var title: String
 }
 
-// 2. Create a class or struct to manage the list of chats
-//class ChatManager: ObservableObject {
-//    var selectedChat: Chat? {
-//        chatHistory.first { $0.id == selectedChatID }
-//    }
-//    
-//    @Published var selectedChatID: UUID? = nil
-//    // This is the list that will hold all your Chat instances
-//    @Published var chatHistory: [Chat] = []
-//
-//    // A method to add a new chat to the history
-//    func addChat(_ newChat: Chat) {
-//        chatHistory.append(newChat)
-//    }
-//    
-//    init() {
-//        // 1. First, populate the chat history
-//        self.chatHistory = [
-//            Chat(title: "SwiftUI Questions"),
-//            Chat(title: "Project Ideas"),
-//            Chat(title: "Groceries")
-//        ]
-//        // 2. Then, set the selectedChatID from the now-populated array
-//        self.selectedChatID = self.chatHistory.first?.id
-//    }
-//}
 
 class ChatManager: ObservableObject {
     @Published var selectedChatID: UUID? = nil

@@ -1,4 +1,3 @@
-
 import Foundation
 
 // MARK: - Ollama Service for handling API communication
@@ -7,38 +6,71 @@ class OllamaService: ObservableObject, OllamaServiceable {
     private let session = URLSession.shared
     private let url = URL(string: "http://localhost:11434/api/generate")!
 
-    // MARK: - Public Interface
-
-    /// Generates a response from the Ollama API in a non-streaming fashion.
-    /// - Parameters:
-    ///   - model: The name of the model to use (e.g., "llava:7b").
-    ///   - prompt: The text prompt to send to the model.
-    /// - Returns: The complete generated response.
-    /// - Throws: An error if the network request or JSON decoding fails.
+    func streamResponse(model: String, prompt: String) -> AsyncThrowingStream<OllamaResponse, Error> {
+        AsyncThrowingStream { continuation in
+            Task {
+                let requestPayload = OllamaRequest(model: model, prompt: prompt)
+                
+                var request = URLRequest(url: url)
+                request.httpMethod = "POST"
+                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+                request.httpBody = try? JSONEncoder().encode(requestPayload)
+                
+                do {
+                    let (bytes, response) = try await session.bytes(for: request)
+                    
+                    guard let httpResponse = response as? HTTPURLResponse,
+                          httpResponse.statusCode == 200 else {
+                        throw OllamaError.invalidResponse
+                    }
+                    
+                    for try await line in bytes.lines {
+                        if let data = line.data(using: .utf8),
+                           let ollamaResponse = try? JSONDecoder().decode(OllamaResponse.self, from: data) {
+                            continuation.yield(ollamaResponse)
+                            
+                            if ollamaResponse.done {
+                                continuation.finish()
+                                return
+                            }
+                        }
+                    }
+                    
+                    continuation.finish()
+                } catch {
+                    continuation.finish(throwing: error)
+                }
+            }
+        }
+    }
+    
     func generateResponse(model: String, prompt: String) async throws -> OllamaResponse {
         let requestPayload = OllamaRequest(model: model, prompt: prompt)
-        
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try? JSONEncoder().encode(requestPayload)
         
-        do {
-            request.httpBody = try JSONEncoder().encode(requestPayload)
-        } catch {
-            throw OllamaError.encodingFailed(error)
-        }
-        
-        let (data, response) = try await session.data(for: request)
+        let (bytes, response) = try await session.bytes(for: request)
         
         guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
             throw OllamaError.invalidResponse
         }
         
-        do {
-            let ollamaResponse = try JSONDecoder().decode(OllamaResponse.self, from: data)
-            return ollamaResponse
-        } catch {
-            throw OllamaError.decodingFailed(error)
+        var lastResponse: OllamaResponse?
+        for try await line in bytes.lines {
+            if let data = line.data(using: .utf8),
+               let ollamaResponse = try? JSONDecoder().decode(OllamaResponse.self, from: data) {
+                lastResponse = ollamaResponse
+                if ollamaResponse.done {
+                    break
+                }
+            }
+        }
+        if let lastResponse = lastResponse {
+            return lastResponse
+        } else {
+            throw OllamaError.invalidResponse
         }
     }
 }
@@ -49,7 +81,7 @@ class OllamaService: ObservableObject, OllamaServiceable {
 struct OllamaRequest: Codable {
     let model: String
     let prompt: String
-    let stream: Bool = false // We'll stick to non-streaming for simplicity first
+    let stream: Bool = true
 }
 
 /// The JSON response from the Ollama /api/generate endpoint.

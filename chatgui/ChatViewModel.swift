@@ -88,11 +88,17 @@ class ChatViewModel: ObservableObject {
         // 2) Ask the model for a response
         Task {
             do {
-                let response = try await ollamaService.generateResponse(model: modelToUse, prompt: userText)
-                
-                // 3) Save the assistant's message to the same chat
-                let assistantMessage = Message(role: .assistant, content: response.response, date: Date())
+                // 1) Create the assistant message once, initially empty
+                let assistantMessage = Message(role: .assistant, content: "", date: Date())
                 chat.messages.append(assistantMessage)
+                
+                // 2) Stream and append to the same message
+                for try await chunk in ollamaService.streamResponse(model: modelToUse, prompt: userText) {
+                    // Find and update the last message (the assistant message we just added)
+                    if let index = chat.messages.lastIndex(where: { $0.id == assistantMessage.id }) {
+                        chat.messages[index].content += chunk.response
+                    }
+                }
             } catch {
                 self.errorMessage = (error as? LocalizedError)?.errorDescription ?? "An unknown error occurred."
             }
@@ -100,3 +106,4 @@ class ChatViewModel: ObservableObject {
         }
     }
 }
+
